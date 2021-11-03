@@ -1,9 +1,9 @@
 <form>
-    <h1> CRIANDO UMA NOVA CATEGORIA</h1>
+    <h1> ATUALIZANDO CATEGORIA</h1>
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
-        <input matInput [(ngModel)]="categoria.nome" type="text" name="nome" placeholder="Ex. Computação">
+        <input matInput [(ngModel)]="categoria.nome"  type="text" name="nome" placeholder="Ex. Computação">
     </mat-form-field>
     <mat-form-field class="form">
         <mat-label>Descrição</mat-label>
@@ -11,8 +11,9 @@
     </mat-form-field>
 
     <div class="buttons">
-        <button (click)="create()" class="mat-elevation-z8" mat-stroked-button color="accent">CRIAR</button>
+        <button (click)="update()" class="mat-elevation-z8" mat-stroked-button color="accent">ATUALIZAR</button>
         <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="link">CANCELAR</button>
 
     </div>
 </form>
+
